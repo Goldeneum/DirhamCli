@@ -79,7 +79,7 @@ add_dependencies(SimpleWallet version)
 add_dependencies(PaymentGateService version)
 add_dependencies(P2P version)
 
-set_property(TARGET Daemon PROPERTY OUTPUT_NAME "dirhamd")
+set_property(TARGET Daemon PROPERTY OUTPUT_NAME "goldeneumd")
 set_property(TARGET SimpleWallet PROPERTY OUTPUT_NAME "simplewallet")
 set_property(TARGET PaymentGateService PROPERTY OUTPUT_NAME "walletd")
 set_property(TARGET Miner PROPERTY OUTPUT_NAME "miner")
