@@ -37,7 +37,7 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 const uint64_t POINT                                         = UINT64_C(1000);        // pow(10, 3)
 
 // MONEY_SUPPLY - total number coins to be generated
-const uint64_t MONEY_SUPPLY                                  = UINT64_C(1000000);
+const uint64_t MONEY_SUPPLY                                  = UINT64_C(18446744073709551616);
 const uint32_t MANDATORY_TRANSACTION                          = 0;
 const uint32_t KILL_HEIGHT                          = 0;
 const uint64_t TAIL_EMISSION_REWARD                          = 0;
@@ -47,7 +47,7 @@ static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED
 
 //premine
 const uint64_t COIN                                           = UINT64_C(1000000);     // pow(10, 6)
-const uint64_t GENESIS_BLOCK_REWARD	                      = (UINT64_C(18000)* parameters::COIN); // 1.8 trillion premine
+const uint64_t GENESIS_BLOCK_REWARD	                      = (UINT64_C(20000)* parameters::COIN); // 2 trillion premine
 
 const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 100;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 100000; //size of block (bytes) after which reward for block calculated using block size
@@ -109,7 +109,7 @@ const uint64_t ICO_BLOCK_REWARD	                             = (UINT64_C(1844674
 const uint64_t MAX_BLOCK_REWARD                              = (UINT64_C(10) * parameters::COIN);
 const uint64_t REWARD_INCREASE_INTERVAL			     = (UINT64_C(100));
 
-const char     CRYPTONOTE_NAME[]                             = "dirham";
+const char     CRYPTONOTE_NAME[]                             = "goldeneum";
 
 const uint8_t  TRANSACTION_VERSION_1                         =  1;
 const uint8_t  TRANSACTION_VERSION_2                         =  2;
@@ -124,7 +124,7 @@ const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        =  10000;  //by def
 const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  100;    //by default, blocks count in blocks downloading
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         =  1000;
 
-const int      P2P_DEFAULT_PORT                              =  8080;
+const int      P2P_DEFAULT_PORT                              =  18999;
 const int      RPC_DEFAULT_PORT                              =  8081;
 
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                =  1000;
@@ -143,7 +143,8 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          //
 const char     P2P_STAT_TRUSTED_PUB_KEY[] = "E29507CA55455F37A3B783EE2C5123B8B6A34A0C5CAAE050922C6254161480C1";
 
 const char* const SEED_NODES[] = {
-  "127.0.0.1:8080",
+  "gol.nacer.ma:18999",
+  "51.254.118.158:18999"
 };
 
 struct CheckpointData {
